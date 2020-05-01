@@ -20,11 +20,12 @@
     "react-dom": "^16.12.0",
     "react-helmet": "^5.2.1",
     "styled-components": "^5.0.0-rc.2",
-    "styled-normalize": "^8.0.6"
+    "styled-normalize": "^8.0.6",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "@types/styled-components": "^4.4.0",
-    "jquery": "3.3.1",
+    "jquery": "3.5.0",
     "prettier": "^1.19.1"
   },
   "keywords": [
@@ -37,7 +38,9 @@
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "yarn develop",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests?\""
+    "test": "echo \"Write tests?\"",
+    "snyk-protect": "snyk protect",
+    "prepare": "yarn run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -45,5 +48,6 @@
   },
   "bugs": {
     "url": "https://github.com/22a/ie"
-  }
+  },
+  "snyk": true
 }
